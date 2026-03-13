@@ -22,29 +22,43 @@ Install the dependencies using pip:
 ```bash
 pip install pygame networkx
 ```
-Controls & Hotkeys
-You can control the application using the top menu buttons or the following keyboard shortcuts:
+## Controls & Hotkeys
 
-Modes
-S (Select/Move): Click and drag nodes to move them. Click a node to select it (shows its degree). Press Delete or Backspace to delete the selected node.
-A (Add Node): Click anywhere on the empty white canvas to create a new node.
-E (Add Edge): Click and drag from one node to another to create an edge. A pop-up will appear at the bottom-left asking for the edge weight. Type a number and press Enter.
-D (Delete Node): Click a node to remove it and all its connected edges.
-J (Dijkstra): Enter Dijkstra mode, then click on a node to set it as the source. It will calculate shortest paths to all other reachable nodes.
+* **S – Select / Move Mode**:
+  * Click and drag nodes to move them on the canvas.
+  * Click a node to select it and view its degree.
+  * Press **Delete** or **Backspace** to remove the selected node.
 
-Actions
-P: Run Prim's Algorithm (MST).
-B: Run BFS.
-F: Run DFS.
-K: Calculate and display the number of Connected Components.
-C: Clear all current algorithm visualizations.
-L: Print to the console whether the graph is Planar or NOT Planar.
+* **A – Add Node Mode**:
+  * Click anywhere on the empty canvas to create a new node.
 
-Visual Guide (Edge Colors)
-When algorithms are run, the edges are highlighted in different colors to show the result:
+* **E – Add Edge Mode**:
+  * Click and drag from one node to another to create an edge.
+  * A pop-up will appear at the bottom-left asking for the edge weight.
+  * Enter the weight and press **Enter**.
 
-Gray (Thin): Default unvisited edge.
-Red (Thick): Minimum Spanning Tree (Prim's).
-Green (Thick): Breadth-First Search (BFS) path.
-Purple (Thick): Depth-First Search (DFS) path.
-Orange (Thick): Dijkstra's Shortest Path.
+* **D – Delete Node Mode**:
+  * Click on a node to delete it along with all its connected edges.
+
+* **J – Dijkstra Mode**:
+  * Activate Dijkstra mode and click on a node to set it as the source.
+  * The algorithm calculates the shortest paths to all reachable nodes.
+
+---
+
+## Actions
+
+* **P – Prim's Algorithm**: Run Prim’s Algorithm to generate and highlight the Minimum Spanning Tree (MST).
+* **B – BFS (Breadth-First Search)**: Execute BFS and highlight the traversal path.
+* **F – DFS (Depth-First Search)**: Execute DFS and highlight the traversal path.
+* **K – Connected Components**: Calculate and display the number of connected components in the graph.
+* **C – Clear Visualization**: Clear all currently displayed algorithm results.
+* **L – Planarity Check**: Print to the console whether the graph is **Planar** or **Not Planar**.
+---
+
+## Visual Guide (Edge Colors)
+* **Gray (Thin)**: Default unvisited edge.
+* **Red (Thick)**: Edges included in the **Minimum Spanning Tree (Prim’s)**.
+* **Green (Thick)**: Edges visited during **Breadth-First Search (BFS)**.
+* **Purple (Thick)**: Edges visited during **Depth-First Search (DFS)**.
+* **Orange (Thick)**: Edges representing **Dijkstra’s shortest paths**.
